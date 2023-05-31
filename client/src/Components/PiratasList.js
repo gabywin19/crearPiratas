@@ -14,7 +14,7 @@ const PiratasList = ({ piratas, setLoading }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete("http://localhost:6060/api/pirate/" + id);
+      await axios.delete("http://13.59.197.9:6060/api/pirate/" + id);
 
       setLoading(true);
     } catch (e) {

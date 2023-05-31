@@ -20,7 +20,7 @@ const PiratasDetail = () => {
   useEffect(() => {
     const detalles = async () => {
       try {
-        const res = await axios.get("http://localhost:6060/api/pirate/" + id);
+        const res = await axios.get("http://13.59.197.9:6060/api/pirate/" + id);
 
         setView(res.data);
       } catch (e) {

@@ -19,7 +19,7 @@ const PiratasForm = () => {
     setPirateForm(false);
     setLoading(true);
     try {
-      await axios.post("http://localhost:6060/api/pirate", valores);
+      await axios.post("http://13.59.197.9:6060/api/pirate", valores);
       setPirateForm(200);
     } catch (e) {
       console.log("Error", e);

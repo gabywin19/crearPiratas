@@ -12,7 +12,7 @@ const Piratas=() =>{
       setLoading(true);
       setPiratas([]);
       try {
-        const res = await axios.get('http://localhost:6060/api/pirate');
+        const res = await axios.get('http://13.59.197.9:6060/api/pirate');
 
         setLoading(false);
         setPiratas(res.data);
